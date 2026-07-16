@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bg_body_dark">#1a1a1a</color>
+    <color name="bg_calc_dark">#2a2a2a</color>
+    <color name="bg_header_dark">#333333</color>
+    <color name="bg_display_dark">#111111</color>
+    <color name="bg_btn_dark">#2d2d2d</color>
+    <color name="bg_btn_active_dark">#444444</color>
+    <color name="text_primary_dark">#FFFFFF</color>
+    <color name="text_secondary_dark">#E0E0E0</color>
+    <color name="text_muted_dark">#AAAAAA</color>
+    <color name="accent_blue">#4a9eff</color>
+    <color name="danger_red">#ff4444</color>
+    <color name="warning_orange">#ff8844</color>
+    <color name="border_dark">#333333</color>
+
+    <color name="bg_body_light">#e8e8e8</color>
+    <color name="bg_calc_light">#ffffff</color>
+    <color name="bg_header_light">#f0f0f0</color>
+    <color name="bg_display_light">#f5f5f5</color>
+    <color name="bg_btn_light">#e0e0e0</color>
+    <color name="bg_btn_active_light">#d0d0d0</color>
+    <color name="text_primary_light">#1a1a1a</color>
+    <color name="text_secondary_light">#333333</color>
+    <color name="text_muted_light">#666666</color>
+    <color name="accent_blue_light">#0066cc</color>
+    <color name="danger_red_light">#cc0000</color>
+    <color name="warning_orange_light">#cc6600</color>
+    <color name="border_light">#dddddd</color>
+</resources>
