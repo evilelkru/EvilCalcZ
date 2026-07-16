@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">EvilCalc</string>
+    <string name="history_title">История</string>
+    <string name="history_empty">История пуста</string>
+    <string name="clear_history">Очистить всю историю</string>
+</resources>
