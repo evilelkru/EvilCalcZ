@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_body_dark">
+
+    <!-- Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_header_dark"
+        android:padding="12dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="EvilCalc"
+            android:textColor="@color/text_primary_dark"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <Switch
+            android:id="@+id/themeSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="12dp" />
+
+        <Button
+            android:id="@+id/historyBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ИСТ"
+            android:textSize="14sp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:textColor="@color/text_primary_dark" />
+    </LinearLayout>
+
+    <!-- Expression Display -->
+    <EditText
+        android:id="@+id/expressionDisplay"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@color/bg_display_dark"
+        android:textColor="@color/text_secondary_dark"
+        android:textSize="28sp"
+        android:padding="16dp"
+        android:gravity="top|start"
+        android:inputType="none"
+        android:textIsSelectable="true"
+        android:cursorVisible="true"
+        android:scrollbars="vertical"
+        android:overScrollMode="always" />
+
+    <!-- Result Display -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/bg_display_dark"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/resultMain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="@color/text_primary_dark"
+            android:textSize="42sp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/resultBracket"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#888888"
+            android:textSize="42sp"
+            android:layout_marginStart="8dp" />
+    </LinearLayout>
+
+    <!-- Buttons Grid -->
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:columnCount="5"
+        android:rowCount="5"
+        android:background="@color/bg_body_dark">
+
+        <!-- Row 1 -->
+        <Button android:id="@+id/btnHistory" android:text="ИСТ" android:layout_columnWeight="1" android:layout_rowWeight="1" android:textSize="18sp" />
+        <Button android:id="@+id/btnOpenParen" android:text="(" android:layout_columnWeight="1" android:layout_rowWeight="1" android:textSize="26sp" />
+        <Button android:id="@+id/btnCloseParen" android:text=")" android:layout_columnWeight="1" android:layout_rowWeight="1" android:textSize="26sp" />
+        <Button android:id="@+id/btnClear" android:text="C" android:layout_columnWeight="1" android:layout_rowWeight="1" android:textColor="@color/danger_red" android:textSize="28sp" />
+        <Button android:id="@+id/btnBackspace" android:text="⌫" android:layout_columnWeight="1" android:layout_rowWeight="1" android:textColor="@color/danger_red" android:textSize="22sp" />
+
+        <!-- Row 2 -->
+        <Button android:id="@+id/btn7" android:text="7" android:layout_columnWeight="1" android:layout_rowWeight="1" android:textSize="26sp" />
+        <Button android:id="@+id/btn8" android:text="8" android:layout_columnWeight="1" android:layout_rowWeight="1" android:textSize="26sp" />
+        <Button android:id="@+id/btn9" android:text="9" android:layout_columnWeight="1" android:layout_rowWeight="1" android:textSize="26sp" />
+        <Button android:id="@+id/btnDiv" android:text="÷" android:layout_columnWeight="1" android:layout_rowWeight="1" android:textColor="@color/accent_blue" android:textSize="30sp" />
+        <Button android:id="@+id/btnLeft" android:text="←" android:layout_columnWeight="1" android:layout_rowWeight="1" android:textColor="@color/accent_blue" android:textSize="24sp" />
+
+        <!-- Row 3 -->
+        <Button android:id="@+id/btn4" android:text="4" android:layout_columnWeight="1" android:layout_rowWeight="1" android:textSize="26sp" />
+        <Button android:id="@+id/btn5" android:text="5" android:layout_columnWeight="1" android:layout_rowWeight="1" android:textSize="26sp" />
+        <Button android:id="@+id/btn6" android:text="6" android:layout_columnWeight="1" android:layout_rowWeight="1" android:textSize="26sp" />
+        <Button android:id="@+id/btnMul" android:text="×" android:layout_columnWeight="1" android:layout_rowWeight="1" android:textColor="@color/accent_blue" android:textSize="30sp" />
+        <Button android:id="@+id/btnRight" android:text="→" android:layout_columnWeight="1" android:layout_rowWeight="1" android:textColor="@color/accent_blue" android:textSize="24sp" />
+
+        <!-- Row 4 -->
+        <Button android:id="@+id/btn1" android:text="1" android:layout_columnWeight="1" android:layout_rowWeight="1" android:textSize="26sp" />
+        <Button android:id="@+id/btn2" android:text="2" android:layout_columnWeight="1" android:layout_rowWeight="1" android:textSize="26sp" />
+        <Button android:id="@+id/btn3" android:text="3" android:layout_columnWeight="1" android:layout_rowWeight="1" android:textSize="26sp" />
+        <Button android:id="@+id/btnSub" android:text="−" android:layout_columnWeight="1" android:layout_rowWeight="1" android:textColor="@color/accent_blue" android:textSize="32sp" />
+        <Button android:id="@+id/btnDel" android:text="Del" android:layout_columnWeight="1" android:layout_rowWeight="1" android:textColor="@color/warning_orange" android:textSize="20sp" />
+
+        <!-- Row 5 -->
+        <Button android:id="@+id/btn0" android:text="0" android:layout_columnWeight="1" android:layout_rowWeight="1" android:textSize="26sp" />
+        <Button android:id="@+id/btnDot" android:text="." android:layout_columnWeight="1" android:layout_rowWeight="1" android:textSize="26sp" />
+        <Button android:id="@+id/btnPercent" android:text="%" android:layout_columnWeight="1" android:layout_rowWeight="1" android:textSize="26sp" />
+        <Button android:id="@+id/btnAdd" android:text="+" android:layout_columnWeight="1" android:layout_rowWeight="1" android:textColor="@color/accent_blue" android:textSize="32sp" />
+        <Button android:id="@+id/btnEquals" android:text="=" android:layout_columnWeight="1" android:layout_rowWeight="1" android:textColor="@color/accent_blue" android:textSize="32sp" />
+    </GridLayout>
+</LinearLayout>
